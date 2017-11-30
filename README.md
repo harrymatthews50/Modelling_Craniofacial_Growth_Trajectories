@@ -7,7 +7,7 @@ If re-using the methodology, data or code from this paper, please cite it approp
 
 
 ### Available Data
-The paper analyses 3D photographs of children which cannot be redistributed. However we provide an abstract coding of the shape of each head in the form of principal component projections, in 'Participant Data\PC_projections.xlsx'. These code the variability in the sample of shapes and much of the anlaysis can be performed using only these.
+The paper analyses 3D photographs of children which cannot be redistributed. However we provide an abstract coding of the shape of each head in the form of principal component projections (in 'Participant Data\PC_projections.xlsx'). These code the variability in the sample of shapes and much of the analysis can be performed using only these.
 
 They were created using the following code in python:
 
