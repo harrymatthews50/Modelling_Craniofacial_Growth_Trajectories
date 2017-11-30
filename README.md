@@ -33,7 +33,7 @@ This recoding has no effect on the statistics used in the analysis (PLS-Regressi
 This coding is completely reversible if the eigenvectors (v) are available:
 
 ```python
-Y = np.dot(PC_projections,v) + Ymeam
+Y = np.dot(PC_projections,v) + Ymean
 ```
 
 In order to protect participant anonymity we do not provide the eigenvectors as this would allow reconstruction of the images.
