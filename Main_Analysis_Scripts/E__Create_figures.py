@@ -138,7 +138,7 @@ gs1.update(wspace=1.,hspace=0.5)
 
 
 colors = [(0.,0.,0.), (0.7,0.7,0.7)]
-linestyles = ['dotted','solid']
+linestyles = ['solid','solid']
 labels=['Boys','Girls']
 handles = []
 
@@ -191,7 +191,7 @@ for i, sex in enumerate(('Boys','Girls')):
     handles.append(line)
 legend = ax2.legend(handles, labels,loc='best',frameon=False)
 ax2.set_ylabel('Growth Rate')
-ax2.set_title('B',family = 'serif',weight='bold',size=15.)
+ax2.set_title('B',weight='bold',size=15.)
 
 
 ax3 = plt.subplot(gs1[1,2:])
@@ -199,12 +199,13 @@ plotinfo = pa.read_excel(os.path.join(gen_datapath,'Overall_size_and_shape_diffe
 ax3.fill_between(plotinfo.columns,plotinfo.loc['Lower',:], y2=plotinfo.loc['Upper',:], color = 'k',alpha=0.5, edgecolor='none')
 ax3.plot(plotinfo.columns,plotinfo.loc['Centre',:], color = 'k')
 ax3.set_ylabel('Procrustes Distance')
-ax3.set_title('C',family = 'serif',weight='bold',size=15.)
+ax3.set_title('C',weight='bold',size=15.)
 
 
 # extra formatting
-for ax in [ax1,ax2,ax3]:
+for ax in [ax2,ax3]:
     ax.set_xlim([1.,16.5])
+for ax in [ax1, ax2,ax3]:    
     # allow scientific notation
     ax.ticklabel_format(style='sci',useMathText=True,scilimits=(0.5,1000))
     
@@ -224,6 +225,7 @@ ax3.set_xlabel('Age')
 plt.setp(ax2.get_xticklabels(),visible=False)
 
 plt.savefig(os.path.join(save_figurepath,'Overall_size_and_shape_results_figure.jpg'),bbox_inches = 'tight',dpi = 800)
+plt.savefig(os.path.join(save_figurepath,'Overall_size_and_shape_results_figure.tiff'),bbox_inches = 'tight',dpi = 800)
 plt.savefig(os.path.join(save_figurepath,'Overall_size_and_shape_results_figure.eps'),bbox_inches = 'tight')
 
 
