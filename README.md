@@ -1,7 +1,7 @@
 ## Overview
 This package contains supporting code and data for the manuscript:
 
-Matthews H., Penington A.,Hardiman R., Fan Y., Clement J., Kilpatrick N., Claes P. Modelling 3D craniofacial growth trajectories for population comparison and classification: Illustrated using sex-differences", submitted to Scientific Reports.
+Matthews, H., Penington, A., Hardiman, R., Fan, Y., Clement, J., Kilpatrick, N., Claes, P. (2018). Modelling 3D craniofacial growth trajectories for population comparison and classification, illustrated using sex-differences. Scientific Reports, 8. 
 
 If re-using the methodology, data or code from this paper, please cite it appropriately.
 
